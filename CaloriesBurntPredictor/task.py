@@ -66,7 +66,7 @@ plt.title('Calories burned vs Duration of Exercise');
 X = df2.Duration
 y = df2.Calories
 
-class SimpleLinearRegression:
+class LinearRegression:
 
     def __init__(self):
         self.b0 = None
@@ -87,7 +87,7 @@ class SimpleLinearRegression:
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
-model = SimpleLinearRegression()
+model = LinearRegression()
 model.fit(X_train, y_train)
 preds = model.predict(X_test)
 
