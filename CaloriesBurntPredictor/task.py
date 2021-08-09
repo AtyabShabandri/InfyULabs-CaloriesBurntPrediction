@@ -56,7 +56,7 @@ calories = pd.read_csv('calories.csv')
 df2 = pd.merge(exercise, calories, on = 'User_ID')
 df2.head(5)
 
-# Visualizing the effect of exercise minutes on calories burned
+# Calories Burned vs Exercise Duration 
 plt.figure(figsize=(6, 6))
 plt.scatter(df2['Duration'], df2['Calories']);
 plt.xlabel('Duration in mins'); plt.ylabel('Calories'); 
